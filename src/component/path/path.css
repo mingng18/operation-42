@@ -1,0 +1,69 @@
+.path_container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ================= BACKGROUND ==================*/
+.picture {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* ================= TEXT ==================*/
+.text_container {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    text-align: center;
+}
+
+.path {
+    font-size: 14.552rem;
+    font-weight: 600;
+}
+
+.field {
+    font-size: 3.815rem;
+    color: var(--color-grey);
+}
+
+/* ==================== Media Quaries (Medium Devices) ====================== */
+@media screen and (max-width: 1500px) {
+    .path {
+        font-size: 11.642rem;
+    }
+
+    .field {
+        font-size: 2.441rem;
+    }
+}
+
+/* ==================== Media Quaries (Medium Devices) ====================== */
+@media screen and (max-width: 1024px) {
+    .path {
+        font-size: 7.451rem;
+    }
+    
+    .field {
+        font-size: 1.563rem;
+    }
+}
+
+/* ==================== Media Quaries (Small Devices) ====================== */
+@media screen and (max-width: 600px) {
+    .path {
+        font-size: 3.815rem;
+    }
+    
+    .field {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,117 @@
+.market_container {
+    margin: 8rem 0;
+
+}
+
+.market_heading {
+    font-size: 14.552rem;
+    display: inline-flex;
+    flex-direction: vertical;
+}
+
+.left {
+    color: var(--color-vermillion);
+    
+}
+
+.right {
+    color: var(--color-orange);
+}
+
+.content_container {
+    padding: 2rem 10rem;
+    text-align: right;
+}
+
+.content_direction {
+    display: flex;
+    flex-direction: vertical;
+    justify-content: end;
+    color: var(--color-grey);
+}
+
+.market_content {
+    font-size: 2.441rem;
+}
+
+.market_content_desc {
+    font-size: 1.563rem;
+}
+
+.slide-right {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slide-right text {
+    animation: 20s slide forwards;
+    transform:translateX(-100%);
+}
+
+@keyframes slide {
+    to {
+        transform:translateX(0);
+    }
+}
+
+.slide-left {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: end;
+}
+
+.slide-left text {
+    animation: 20s slide forwards;
+    transform:translateX(100%);
+}
+
+@keyframes slide {
+    to {
+        transform:translateX(0%);
+    }
+}
+
+/* ==================== Media Quaries (Medium-large Devices) ====================== */
+@media screen and (max-width: 1500px) {
+
+}
+
+
+/* ==================== Media Quaries (Medium Devices) ====================== */
+@media screen and (max-width: 1024px) {
+    .market_heading {
+        font-size: 9.313rem;
+    }
+
+    .market_content {
+        font-size: 1.563rem;
+    }
+    
+    .market_content_desc {
+        font-size: 1rem;
+    }
+
+    .content_container {
+        padding: 2rem 5rem;
+    }
+}
+
+/* ==================== Media Quaries (Small Devices) ====================== */
+@media screen and (max-width: 600px) {
+    .market_heading {
+        font-size: 5.96rem;
+    }
+
+    .market_content {
+        font-size: 1.25rem;
+    }
+    
+    .market_content_desc {
+        font-size: 0.8rem;
+    }
+
+    .content_container {
+        padding: 2rem 3rem;
+    }
+}

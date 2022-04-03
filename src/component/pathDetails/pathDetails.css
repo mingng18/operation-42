@@ -1,0 +1,114 @@
+.path_section {
+    padding: 10rem 0 10rem;
+    background: var(--color-dark-bg);
+    /* height: 200vh; */
+}
+.background {
+    
+}
+
+.pathDetails_container {
+    width: 86%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+    
+}
+
+.pathDetails_item {
+    background: var(--color-dark-bg);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 10px var(--color-dark-dark)
+    , -10px -10px 10px var(--color-dark-light);
+}
+
+.pathDetails_item-image {
+    padding: 1rem;
+}
+
+.inner_box {
+    box-shadow: inset 10px 10px 10px var(--color-dark-dark)
+    , inset -10px -10px 10px var(--color-dark-light);
+    border-radius: 1.5rem;
+    max-height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.image {
+    padding: 5% 0 5%;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.text_direction {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pathDetails_text {
+    font-weight: 600;
+}
+
+.pathDetails_item-heading {
+    font-size: var(--font-size);
+}
+
+.pathDetails_item-desc {
+    font-size: calc(var(--font-size) /1.25/1.25/1.25);
+    font-weight: 500;
+}
+
+.pathDetails_item-outcome-heading {
+    padding-top: 3rem;
+    font-size: calc(var(--font-size) /1.25/1.25);
+}
+
+.pathDetails_item-outcome {
+    font-size: calc(var(--font-size) /1.25/1.25/1.25/1.25);
+    margin-bottom: 4rem;
+    font-weight: 500;
+}
+
+/* ==================== Media Quaries (Medium-large Devices) ====================== */
+@media screen and (max-width: 1500px) {
+
+}
+
+
+/* ==================== Media Quaries (Medium Devices) ====================== */
+@media screen and (max-width: 1024px) {
+    .pathDetails_container {
+        width: 86%;
+        gap: 4rem;
+    }
+    
+    .pathDetails_item-heading {
+        font-size: calc(var(--font-size)/1.25);
+    }
+    
+    .pathDetails_item-desc {
+        font-size: calc(var(--font-size) /1.25/1.25/1.25/1.25);
+    }
+    
+    .pathDetails_item-outcome-heading {
+        font-size: calc(var(--font-size) /1.25/1.25/1.25);
+    }
+    
+    .pathDetails_item-outcome {
+        font-size: calc(var(--font-size) /1.25/1.25/1.25/1.25/1.25);
+    }
+}
+
+/* ==================== Media Quaries (Small Devices) ====================== */
+@media screen and (max-width: 600px) {
+    .pathDetails_container {
+        width: 86%;
+        gap: 4rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
